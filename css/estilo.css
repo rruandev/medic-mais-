@@ -103,7 +103,9 @@ a.chip:hover{border-color:var(--red)}
 
 /* Tratamentos: dois blocos, lista com ícone, sem botão em cada item */
 .services{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-.svc{background:#fff;border:1px solid var(--line);border-radius:28px;padding:38px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:28px;padding:38px;overflow:hidden}
+.svc-foto{display:block;width:calc(100% + 76px);max-width:none;margin:-38px -38px 30px;height:auto;aspect-ratio:16/9;object-fit:cover}
+.foto-medico{object-position:50% 35%}
 .svc-top{display:flex;align-items:center;gap:16px;margin-bottom:8px}
 .svc-top .ic{width:60px;height:60px;border-radius:18px;background:var(--red);color:#fff;display:grid;place-items:center;flex:none}
 .svc-top .ic svg{width:32px;height:32px}
@@ -115,6 +117,14 @@ a.chip:hover{border-color:var(--red)}
 .svc li b{display:block;font-size:1.1875rem;line-height:1.3}
 .svc li span{display:block;font-size:1.0625rem;color:var(--text-2);line-height:1.45}
 .sec-cta{margin-top:44px;text-align:center}
+
+/* Galeria da estrutura */
+.galeria{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:repeat(2,300px);gap:16px}
+.galeria figure{position:relative;margin:0;border-radius:24px;overflow:hidden;background:var(--line)}
+.galeria img{width:100%;height:100%;object-fit:cover;display:block}
+.galeria .g-fachada{grid-row:span 2}
+.galeria .g-fachada img{object-position:50% 70%}
+.galeria figcaption{position:absolute;left:14px;bottom:14px;background:#fff;color:var(--ink);font-weight:700;font-size:1rem;padding:8px 14px;border-radius:999px;box-shadow:var(--shadow)}
 
 /* Saúde Day */
 .sday{background:var(--red);color:#fff;border-radius:36px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:56px;overflow:hidden}
@@ -180,6 +190,10 @@ footer a{color:var(--ink);font-weight:600}
   .trust-item:nth-child(3){border-left:0}
   .trust-item:nth-child(n+3){border-top:1px solid var(--line)}
   .services,.quotes,.contact{grid-template-columns:1fr}
+  .galeria{grid-template-columns:1fr 1fr;grid-template-rows:none;grid-auto-rows:220px}
+  .galeria .g-fachada{grid-column:span 2;grid-row:auto}
+  .galeria .g-fachada img{object-position:50% 42%}
+  .galeria figure:last-child{grid-column:span 2}
   .sday{grid-template-columns:1fr;padding:36px 28px}
   footer .wrap{grid-template-columns:1fr}
   footer{padding-bottom:120px}
@@ -205,5 +219,8 @@ footer a{color:var(--ink);font-weight:600}
   .trust-item + .trust-item{border-left:0;border-top:1px solid var(--line)}
   .trust-item{padding:22px}
   .svc{padding:28px 22px}
+  .svc-foto{width:calc(100% + 44px);margin:-28px -22px 24px}
+  .galeria{grid-auto-rows:170px;gap:10px}
+  .galeria figcaption{font-size:.875rem;left:10px;bottom:10px;padding:6px 11px}
   .hero .btn,.sec-cta .btn,.contact .btn,.sday .btn{width:100%}
 }
