@@ -1,12 +1,18 @@
 # MedicMais Sobradinho-DF
 
-Landing page da clínica médica e odontológica MedicMais Sobradinho-DF.
+Site da clínica médica e odontológica MedicMais Sobradinho-DF. Publicado via GitHub Pages.
 
-Arquivo único (`index.html`), sem dependências. Publicado via GitHub Pages.
+## Estrutura
+- `index.html`: conteúdo da página e ícones (sprite SVG)
+- `css/estilo.css`: estilos (cores da marca em `:root`)
+- `js/site.js`: cabeçalho que encolhe ao rolar, aviso de aberto/fechado (horário de Brasília) e barra do WhatsApp no celular
+- `img/`: logo, símbolo e foto do topo
 
-## Pendências antes de divulgar
-- Horário de funcionamento
-- CNPJ e responsáveis técnicos (CRM / CRO)
-- Confirmar DDD do telefone (61 presumido)
-- Trocar os cards de vídeo pelos arquivos reais dos reels
-- Logo oficial no lugar do logo em texto
+Sem framework e sem etapa de build: basta abrir o `index.html` ou servir a pasta.
+
+## Pendências com a clínica
+- Confirmar o CNPJ da unidade (o encontrado está inapto e com endereço antigo)
+- Confirmar os responsáveis técnicos (CRM / CRO)
+- Trocar a foto do topo (banco de imagem) por foto real da equipe
+
+As fotos `img/foto-*.jpg` são reais, tiradas do Google Maps e do Instagram públicos da clínica.
