@@ -11,7 +11,6 @@ Site da clínica médica e odontológica MedicMais Sobradinho-DF. Publicado via 
 Sem framework e sem etapa de build: basta abrir o `index.html` ou servir a pasta.
 
 ## Pendências com a clínica
-- Confirmar o CNPJ da unidade (o encontrado está inapto e com endereço antigo)
 - Confirmar os responsáveis técnicos (CRM / CRO)
 - Trocar a foto do topo (banco de imagem) por foto real da equipe
 
