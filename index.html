@@ -50,9 +50,10 @@
 }
 </script>
 <link rel="icon" href="img/simbolo.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Fontes hospedadas no próprio site (antes vinham do Google e travavam a abertura no celular) -->
+<link rel="preload" href="fonts/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-serif-display.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/medico.webp" as="image" fetchpriority="high">
 <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
@@ -88,7 +89,7 @@
 <header class="top" id="top">
   <div class="wrap">
     <a class="brand" href="#inicio" aria-label="MedicMais Sobradinho, início">
-      <img src="img/logo-horizontal.png" alt="MedicMais Clínica Médica e Odontológica" width="410" height="136">
+      <img src="img/logo-horizontal.webp" alt="MedicMais Clínica Médica e Odontológica" width="410" height="136">
     </a>
     <nav class="nav" aria-label="Seções">
       <a href="#servicos">Tratamentos</a>
@@ -118,9 +119,9 @@
 
     <div class="stage">
       <div class="panel">
-        <img class="mark" src="img/simbolo-branco.png" alt="" aria-hidden="true">
+        <img class="mark" src="img/simbolo-branco.webp" alt="" aria-hidden="true">
         <!-- Foto do cartaz do Saúde Day. Trocar por foto real da equipe quando a clínica mandar. -->
-        <img class="doctor" src="img/medico.png" alt="Médico sorrindo de jaleco branco" width="563" height="689">
+        <img class="doctor" src="img/medico.webp" fetchpriority="high" alt="Médico sorrindo de jaleco branco" width="563" height="689">
       </div>
     </div>
   </div>
@@ -160,7 +161,7 @@
     </div>
     <div class="services">
       <div class="svc">
-        <img class="svc-foto" src="img/foto-consultorio-odonto.jpg" alt="Dentista atendendo paciente no consultório da MedicMais" loading="lazy" width="750" height="1000">
+        <img class="svc-foto" src="img/foto-consultorio-odonto.webp" alt="Dentista atendendo paciente no consultório da MedicMais" loading="lazy" width="750" height="1000">
         <div class="svc-top"><span class="ic"><svg><use href="#i-tooth"/></svg></span><div><h3>Odontologia</h3><span class="badge">Avaliação gratuita</span></div></div>
         <ul>
           <li><svg><use href="#i-plus"/></svg><div><b>Implante dentário</b><span>Reposição de dentes perdidos com planejamento individual.</span></div></li>
@@ -170,7 +171,7 @@
         </ul>
       </div>
       <div class="svc">
-        <img class="svc-foto foto-medico" src="img/foto-medico-paciente.jpg" alt="Médico da MedicMais sorrindo ao lado de uma paciente no consultório" loading="lazy" width="1000" height="1000">
+        <img class="svc-foto foto-medico" src="img/foto-medico-paciente.webp" alt="Médico da MedicMais sorrindo ao lado de uma paciente no consultório" loading="lazy" width="1000" height="1000">
         <div class="svc-top"><span class="ic"><svg><use href="#i-steth"/></svg></span><div><h3>Medicina</h3><span class="badge">Consulta, exames e retorno</span></div></div>
         <ul>
           <li><svg><use href="#i-plus"/></svg><div><b>Clínico geral</b><span>Avaliação de sintomas, histórico e hábitos.</span></div></li>
@@ -194,11 +195,11 @@
       <h2>Um espaço novo, limpo e confortável para receber você</h2>
     </div>
     <div class="galeria">
-      <figure class="g-fachada"><img src="img/foto-fachada.jpg" alt="Fachada da MedicMais na Quadra 7 de Sobradinho" loading="lazy" width="750" height="1000"><figcaption>Fachada na Quadra 7/9</figcaption></figure>
-      <figure><img src="img/foto-recepcao.jpg" alt="Recepção da MedicMais com o balcão da marca" loading="lazy" width="750" height="1000"><figcaption>Recepção</figcaption></figure>
-      <figure><img src="img/foto-sala-espera.jpg" alt="Sala de espera com cadeiras vermelhas" loading="lazy" width="750" height="1000"><figcaption>Sala de espera</figcaption></figure>
-      <figure><img src="img/foto-consultorio-odonto.jpg" alt="Consultório odontológico" loading="lazy" width="750" height="1000"><figcaption>Consultório odontológico</figcaption></figure>
-      <figure><img src="img/foto-consultorio-medico.jpg" alt="Consultório médico" loading="lazy" width="828" height="616"><figcaption>Consultório médico</figcaption></figure>
+      <figure class="g-fachada"><img src="img/foto-fachada.webp" alt="Fachada da MedicMais na Quadra 7 de Sobradinho" loading="lazy" width="750" height="1000"><figcaption>Fachada na Quadra 7/9</figcaption></figure>
+      <figure><img src="img/foto-recepcao.webp" alt="Recepção da MedicMais com o balcão da marca" loading="lazy" width="750" height="1000"><figcaption>Recepção</figcaption></figure>
+      <figure><img src="img/foto-sala-espera.webp" alt="Sala de espera com cadeiras vermelhas" loading="lazy" width="750" height="1000"><figcaption>Sala de espera</figcaption></figure>
+      <figure><img src="img/foto-consultorio-odonto.webp" alt="Consultório odontológico" loading="lazy" width="750" height="1000"><figcaption>Consultório odontológico</figcaption></figure>
+      <figure><img src="img/foto-consultorio-medico.webp" alt="Consultório médico" loading="lazy" width="828" height="616"><figcaption>Consultório médico</figcaption></figure>
     </div>
   </div>
 </section>
@@ -255,7 +256,7 @@
       <a class="btn" href="https://wa.me/5561998255551?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20quero%20agendar%20uma%20consulta." target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>Agendar pelo WhatsApp</a>
     </div>
     <div class="map">
-      <iframe title="Mapa da MedicMais em Sobradinho" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=MedicMais+Sobradinho+Quadra+07+Com%C3%A9rcio+Local+13+Sobradinho+DF&amp;z=16&amp;output=embed"></iframe>
+      <iframe title="Mapa da MedicMais em Sobradinho" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=MedicMais+Sobradinho+Quadra+07+Com%C3%A9rcio+Local+13+Sobradinho+DF&amp;z=16&amp;output=embed"></iframe>
     </div>
   </div>
 </section>
@@ -264,7 +265,7 @@
 <footer>
   <div class="wrap">
     <div>
-      <img class="logo" src="img/logo-horizontal.png" alt="MedicMais Clínica Médica e Odontológica" width="410" height="136">
+      <img class="logo" src="img/logo-horizontal.webp" alt="MedicMais Clínica Médica e Odontológica" width="410" height="136">
       <p style="margin-top:14px">Construir sorrisos e transformar vidas.</p>
     </div>
     <div>
