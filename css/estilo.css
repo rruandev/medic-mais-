@@ -1,3 +1,6 @@
+/* Fontes locais (latin): DM Serif Display 400 e Figtree variável 400–700 */
+@font-face{font-family:'DM Serif Display';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/dm-serif-display.woff2) format('woff2')}
+@font-face{font-family:'Figtree';font-style:normal;font-weight:400 700;font-display:swap;src:url(../fonts/figtree.woff2) format('woff2')}
 /* MedicMais Sobradinho · estilos do site */
 /* Layout: cartaz de clínica. Título serifado à esquerda, médico num painel claro à direita com cartões flutuando.
    Cores chapadas do logo (vermelho, cinza) sobre branco. Sem degradê, brilho ou vidro. */
